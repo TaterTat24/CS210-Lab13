@@ -35,15 +35,6 @@ int isArmstrong(int inputValue) {
         inputValue = inputValue / 10;
     }
 
-<<<<<<< HEAD
-    int i;
-    for (i = 1; i <= numberOfDigits; i++) {
-        /* code */
-    }
-    
-
-    return numberOfDigits;
-=======
     inputValue = originalValue;
 
     //Isolates individual digits and raises them to number of digits, expect for the ones place
@@ -64,7 +55,6 @@ int isArmstrong(int inputValue) {
         printf("%d is not an Armstrong number.\n", originalValue);
         return 0;
     }
->>>>>>> e57fe85d87f11efe91cfa3aa02a76207ba6717fc
 }
 
 int findGCD(int num1, int num2) {
