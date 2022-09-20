@@ -30,7 +30,12 @@ int isArmstrong(int inputValue) {
         inputValue = inputValue / 10;
     }
 
+    int i;
+    for (i = 1; i <= numberOfDigits; i++) {
+        /* code */
+    }
     
+
     return numberOfDigits;
 }
 
