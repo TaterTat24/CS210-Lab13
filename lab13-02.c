@@ -12,14 +12,10 @@
 #include "lab13functs.h"
 
 int main() {
-    int inputValue = 371;
-    //scanf("%d", &inputValue);
+    int inputValue;
+    scanf("%d", &inputValue);
 
     isArmstrong(inputValue);
-    
-    printf("371/10 = %d\n", 371/10);
-    printf("371/100 = %d\n", 37/100);
-    printf("371mod100 = %d\n", 371%100);
 
     return 0;
 }

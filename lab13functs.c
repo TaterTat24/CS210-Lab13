@@ -24,12 +24,18 @@ void printRange(int startValue, int endValue) {
 }
 
 int isArmstrong(int inputValue) {
+    int originalValue = inputValue;
+    int i;
     int numberOfDigits = 1;
+    int digit;
+    int runningCount = 0;
+
     while (inputValue/10 != 0) {
         numberOfDigits = numberOfDigits + 1;
         inputValue = inputValue / 10;
     }
 
+<<<<<<< HEAD
     int i;
     for (i = 1; i <= numberOfDigits; i++) {
         /* code */
@@ -37,6 +43,28 @@ int isArmstrong(int inputValue) {
     
 
     return numberOfDigits;
+=======
+    inputValue = originalValue;
+
+    //Isolates individual digits and raises them to number of digits, expect for the ones place
+    for (i = numberOfDigits; i > 1; i--) {
+        digit = (inputValue / (int) (pow(10, i-1)));
+        runningCount = runningCount + (int) (pow(digit, numberOfDigits));
+        inputValue = inputValue - digit * (int) (pow(10, i-1));
+    }
+    
+    //Raises ones digit place to number of digits
+    runningCount = runningCount + pow(inputValue, numberOfDigits);
+    
+    if (runningCount == originalValue) {
+        printf("%d is an Armstrong number.\n", originalValue);
+        return 1;
+    }
+    else {
+        printf("%d is not an Armstrong number.\n", originalValue);
+        return 0;
+    }
+>>>>>>> e57fe85d87f11efe91cfa3aa02a76207ba6717fc
 }
 
 int findGCD(int num1, int num2) {
