@@ -6,8 +6,8 @@
  * Purpose: high level description of purpose of the program
  *          could be multiple lines
  * =========================================================== */
-#ifndef LAB12FUNCTS_H
-#define LAB12FUNCTS_H
+#ifndef LAB13FUNCTS_H
+#define LAB13FUNCTS_H
 
 /**
 * @brief When called, printRange should print out all of the 
